@@ -2,7 +2,27 @@
 {
     internal class FlowerShop
     {
+        public FlowerShop()
+        {
+            // Конструктор по умолчанию
+        }
 
+        public FlowerShop(params Flower[] flowers)
+        {
+            // Конструктор с параметрами
+        }
+
+        // Блок инициализации
+        static FlowerShop()
+        {
+            // Инициализация статических членов класса
+        }
+
+        // Конструктор-копирование
+        public FlowerShop(FlowerShop other)
+        {
+            // Копирование состояния из другого объекта FlowerShop
+        }
 
         public Bouquet MakeBouquet(Flower[] flowers)
         {
@@ -15,8 +35,6 @@
 
         public Flower BuyFlower(ColorsEnum color)
         {
-
-
             return new Flower(color);
         }
 

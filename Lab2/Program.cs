@@ -20,6 +20,8 @@
             Console.WriteLine("Bouquet 2 price: {0}", bouquet2.Price);
             Console.WriteLine("Bouquet 2 weight: {0}", bouquet2.WeightGrams);
             Console.WriteLine("Bouquet 2 the most expensive flower price: {0}", bouquet2.TheMostExpensiveFlower.Price);
+
+        
         }
     }
 }
