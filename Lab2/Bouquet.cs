@@ -29,7 +29,7 @@
             Console.WriteLine("Состав букета:");
             foreach (Flower flower in flowers)
             {
-                Console.WriteLine($"Цветок: {flower.Name}, Цена: {flower.Price}");
+            flower.PrintDetails();
             }
         }
         public double CalculateTotalPrice()

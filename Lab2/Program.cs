@@ -7,10 +7,11 @@ namespace KPOLab2
         public static void Main()
         {
             List<Flower> initialFlowers = new List<Flower>
-      {
-        FlowerFactory.CreateFlower("Роза", 10.0),
-        FlowerFactory.CreateFlower("Тюльпан", 5.0),
-        FlowerFactory.CreateFlower("Лилия", 8.0)
+            {
+                new Orchid("Орхидея", 50.0, 30, "Фиолетовый"),
+                new Lily("Лилия", 15.0, 40, "Свежий аромат"),
+                new PottedFlower("Фикус", 25.0, 60),
+                new CutFlower("Роза", 10.0, 50)
       };
 
             Bouquet bouquet = BouquetFactory.CreateBouquet(initialFlowers);
@@ -18,7 +19,7 @@ namespace KPOLab2
             bouquet.PrintBouquet();
             Console.WriteLine("Общая стоимость букета: " + bouquet.CalculateTotalPrice() + "\n");
 
-            bouquet.ChangeFlowerPrice("Тюльпан", 7.0);
+            bouquet.ChangeFlowerPrice("Лилия", 7.0);
             bouquet.PrintBouquet();
             Console.WriteLine("Общая стоимость букета: " + bouquet.CalculateTotalPrice() + "\n");
 
